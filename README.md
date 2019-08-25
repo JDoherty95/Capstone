@@ -10,11 +10,11 @@ Our goal is to build a model that will predict the likelihood that a draft eligi
 The majority of the data descriptions can be found [here](https://www.basketball-reference.com/about/glossary.html#mp) with the remainder on Bart Torvik's [site](https://www.bigtengeeks.com/new-stat-porpagatu/).
 
 ## Repo Folders/Files
-- Code: 
-    - Data_Collection: Includes all notebooks for data scraping and collection
-    - Data Cleaning and EDA
-    - Modeling
-- Data_Files: Includes the csv files for all saved datasets
+- [Code](https://github.com/lwinter819/Capstone/tree/master/Code): 
+    - [Data_Collection](https://github.com/lwinter819/Capstone/tree/master/Code/Data_Collection): Includes all notebooks for data scraping and collection
+    - [Data Cleaning and EDA](https://github.com/lwinter819/Capstone/blob/master/Code/Data%20Cleaning%20and%20EDA.ipynb)
+    - [Modeling](https://github.com/lwinter819/Capstone/blob/master/Code/Modeling.ipynb)
+- [Data_Files](https://github.com/lwinter819/Capstone/tree/master/Data_Files): Includes the csv files for all saved datasets
 
 
 ## Executive Summary
