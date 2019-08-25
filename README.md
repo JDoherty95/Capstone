@@ -2,18 +2,19 @@
 
 
 ## Problem Statement
-Despite having more access to data and information than ever before, front offices and scouting departments of professional sports teams still continue to struggle to make the correct draft choices. In professional sports, selecting the right player in the draft is critical to a team's future success. It is one of the best ways to build team depth in a cost efficient manner and it is where the fates of the best amateur athletes are decided. Drafting a player is an inexact science, but having a way to predict future success of a player will make a teams draft decision that much easier and will give them a leg up on the competition. 
+Despite having more access to data and information than ever before, front offices and scouting departments of professional sports teams still continue to struggle to make the correct draft choices. In professional sports, selecting the right player in the draft is critical to a team's future success. It is one of the best ways to build team depth in a cost efficient manner and it is where the fates of the best amateur athletes are decided. Drafting a player is an inexact science, but having a way to predict future success of a player will make a teams draft decision that much easier and will give them a leg up on the competition. In the NBA, having multiple players that are All-Stars on a team has been proven to lead to championships. The 2019 NBA champion Toronto Raptors had 3 former All-Stars on their roster (Kawhi Leonard, Kyle Lowry and Marc Gasol) and the Golden State Warriors, the best team of the decade, had 5 former All-Stars on their roster during their three championship runs (Steph Curry, Klay Thompson, Draymond Green, Kevin Durant and Andre Iguodala).
 
-Our goal is to build a model that will predict the likelihood that a draft eligible College Basketball player will become an All-Star in the NBA. The process of becoming an All-Star has changed over the years, but currently the starting lineups for both teams are selected by a weighted combination of fan, player and media voting (50%, 25% and 25% respectively). The reserves are chosen by a vote between the coaches.   In the NBA, having multiple players that are All-Stars on a team has been proven to lead to championships. The 2019 NBA champion Toronto Raptors had 3 former All-Stars on their roster (Kawhi Leonard, Kyle Lowry and Marc Gasol) and the Golden State Warriors, the best team of the decade, had 5 former All-Stars on their roster during their three championship runs (Steph Curry, Klay Thompson, Draymond Green, Kevin Durant and Andre Iguodala). We will look to predict the probability that a draft eligible College Basketball player by analyzing which features of a player lead to the future NBA success.
+Our goal is to build a model that will predict the likelihood that a draft eligible College Basketball player will become an All-Star in the NBA. The process of becoming an All-Star has changed over the years, but currently the starting lineups for both teams are selected by a weighted combination of fan, player and media voting (50%, 25% and 25% respectively). The reserves are chosen by a vote between the coaches. We will look to predict the probability that a draft eligible College Basketball player by analyzing which features of a player lead to the future NBA success.
 
 ## Data Dictionary
 The majority of the data descriptions can be found [here](https://www.basketball-reference.com/about/glossary.html#mp) with the remainder on Bart Torvik's [site](https://www.bigtengeeks.com/new-stat-porpagatu/).
 
 ## Repo Folders/Files
-- Data_Collection: Includes all notebooks for data scraping and collection
+- Code: 
+    - Data_Collection: Includes all notebooks for data scraping and collection
+    - Data Cleaning and EDA
+    - Modeling
 - Data_Files: Includes the csv files for all saved datasets
-- Data Cleaning and EDA
-- Modeleling
 
 
 ## Executive Summary
@@ -48,3 +49,8 @@ When testing my model on unseen data, the 2019 drafted players, it predicted Zio
 - Collect more data: This includes data going back further than 2008. It also includes data for new features. Some new features we'd like to include in our analysis are a players high school recruiting rank, number of wins in college and athletic measurements from the NBA combine. We'd also like to collect data on international players as well as players who were drafted straight from high school.
 - We'd like to figure out a way to quantify the mental aspects of the game. It is good to know the on-court statistics of a player, but there are other off the court aspects which can lead to success. For example, knowing a players basketball aptitude to understand their personality and behavior can be critical to finding a successful player and one that is a fit for a specific team. It would also be good to know if the player has had any run-ins with the law.
 - In the future, we'd like to build out our analysis to predict which amateur basketball players will get drafted, their draft position and from that result find the probability that the drafted players will become All-Stars.
+
+## Resources
+- [Bart Torvik](http://barttorvik.com/playerstat.php?link=y&year=2019&top=353&start=20181101&end=20190501)
+- [Basketball-Reference](https://www.sports-reference.com/cbb/play-index/psl_finder.cgi?request=1&match=combined&year_min=2006&year_max=2019&conf_id=&school_id=&class_is_fr=Y&class_is_so=Y&class_is_jr=Y&class_is_sr=Y&pos_is_g=Y&pos_is_gf=Y&pos_is_fg=Y&pos_is_f=Y&pos_is_fc=Y&pos_is_cf=Y&pos_is_c=Y&games_type=A&qual=&c1stat=&c1comp=&c1val=&c2stat=&c2comp=&c2val=&c3stat=&c3comp=&c3val=&c4stat=&c4comp=&c4val=&order_by=pts&order_by_asc=&offset=0)
+- [MIT Sloan Sports Analytics Conference](http://www.sloansportsconference.com/wp-content/uploads/2018/02/2004.pdf)
